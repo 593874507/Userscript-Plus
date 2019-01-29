@@ -9500,14 +9500,7 @@ exports.default = {
         };
     },
     mounted: function mounted() {
-        var _this = this;
-
-        window.fetch('https://api.jae.sh/userscript-plus').then(function (r) {
-            return r.json();
-        }).then(function (json) {
-            _this.goods = json;
-            _this.curIndex = _this.random(0, json.length - 1);
-        });
+        
     },
 
     computed: {
